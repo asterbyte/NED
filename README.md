@@ -325,3 +325,22 @@ If you find this work useful for your research, please cite our paper.
          year={2022}
 }
 ```
+## Changes
+1) I have downgraded pytorch to 1.6.0+cu101 using these commands.
+
+conda create -n pytorch3d python=3.8
+conda activate pytorch3d
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+
+pip install 'torch==1.6.0+cu101' -f https://download.pytorch.org/whl/torch_stable.html
+pip install 'torchvision==0.7.0+cu101' -f https://download.pytorch.org/whl/torch_stable.html
+pip install 'pytorch3d==0.2.5'
+
+reference: (https://github.com/facebookresearch/pytorch3d/issues/495)
+
+2) Preprocessing->Segmentation->simple_unet.py
+  change self.conv1d = nn.Conv1d(in_size, out_size, kernel_size=(1,1))
+  To self.conv1d = nn.Conv2d(in_size, out_size, kernel_size=(1,1))
+  
+  
+
