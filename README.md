@@ -326,7 +326,8 @@ If you find this work useful for your research, please cite our paper.
 }
 ```
 ## Changes
-deca_model.tar file https://github.com/yfeng95/DECA/issues/8
+For 'generic_model.pkl', 'deca_model.tar', 'FLAME_albedo_from_BFM.npz' follow this link: https://github.com/yfeng95/DECA/issues/39
+deca_model.tar file can be downloaded from here https://github.com/yfeng95/DECA/issues/8
 
 1) I have downgraded pytorch to 1.6.0+cu101 using these commands.
 
