@@ -326,6 +326,8 @@ If you find this work useful for your research, please cite our paper.
 }
 ```
 ## Changes
+deca_model.tar file https://github.com/yfeng95/DECA/issues/8
+
 1) I have downgraded pytorch to 1.6.0+cu101 using these commands.
 
 conda create -n pytorch3d python=3.8
